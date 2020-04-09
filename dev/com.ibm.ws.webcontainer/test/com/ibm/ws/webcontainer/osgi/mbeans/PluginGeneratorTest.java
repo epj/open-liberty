@@ -47,6 +47,7 @@ import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
+import org.osgi.framework.Bundle; // EPJ
 import org.w3c.dom.Comment;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -65,7 +66,7 @@ import com.ibm.wsspi.kernel.service.location.WsLocationAdmin;
 import com.ibm.wsspi.kernel.service.location.WsResource;
 
 import test.common.SharedOutputManager;
-import test.common.junit.rules.MaximumJavaLevelRule;
+//import test.common.junit.rules.MaximumJavaLevelRule;
 
 /**
  *
@@ -73,9 +74,9 @@ import test.common.junit.rules.MaximumJavaLevelRule;
 public class PluginGeneratorTest {
     
     @ClassRule
-    public static MaximumJavaLevelRule maxLevel = new MaximumJavaLevelRule(8);
+//    public static MaximumJavaLevelRule maxLevel = new MaximumJavaLevelRule(8);
     
-    private static SharedOutputManager outputMgr = SharedOutputManager.getInstance().trace("*=info:webcontainer=all");
+    public static SharedOutputManager outputMgr = SharedOutputManager.getInstance().trace("*=info:webcontainer=all");
 
     final Mockery context = new JUnit4Mockery() {
         {
@@ -112,6 +113,7 @@ public class PluginGeneratorTest {
     final Element element = context.mock(Element.class);
     final Document doc = context.mock(Document.class);
     final Comment comment = context.mock(Comment.class);
+    final Bundle bundle = context.mock(Bundle.class);  // EPJ
     final WebContainer mockWebContainer = context.mock(WebContainer.class);
     final SessionManager mockSessionManager = context.mock(SessionManager.class);
     final WsResource mockWsResource = context.mock(WsResource.class);
@@ -193,6 +195,11 @@ public class PluginGeneratorTest {
                 allowing(mockLocationAdmin).getServerName();
                 will(returnValue("SystemProvidedServerName"));
 
+                allowing(mockBundleContext).getBundle(); //EPJ
+         //       will(returnValue(bundle));               //EPJ
+                
+         //       allowing(bundle).getDataFile("cached-PluginCfg.xml");  //EPJ
+                
                 allowing(mockBundleContext).getAllServiceReferences(null, "(&(service.factoryPid=com.ibm.ws.http.virtualhost)(|(enabled=true)(id=default_host)))");
                 will(returnValue(new ServiceReference<?>[] { mockDefVhostRef }));
 
@@ -324,7 +331,8 @@ public class PluginGeneratorTest {
                 will(returnValue("alternate"));
                 allowing(mockAltHost).getAliases();
                 will(returnValue(Arrays.asList("*:3", "*:4")));
-            }
+                
+                allowing(mockBundleContext).getBundle(); //EPJ            }
         });
 
         Map<String, Object> config = new HashMap<String, Object>();
