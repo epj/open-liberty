@@ -2967,7 +2967,7 @@ public class HttpChannelConfig {
     }
 
     public Pattern getForwardedProxiesRegex() {
-        if (this.proxiesPattern == null) {
+        if (Objects.isNull(proxiesPattern)) {
             this.proxiesPattern = Pattern.compile(this.proxiesRegex);
         }
 
