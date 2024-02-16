@@ -31,7 +31,6 @@ import com.ibm.wsspi.channelfw.VirtualConnection;
 import com.ibm.wsspi.channelfw.VirtualConnectionFactory;
 import com.ibm.wsspi.kernel.service.utils.FrameworkState;
 
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.openliberty.netty.internal.ConfigConstants;
 import io.openliberty.netty.internal.NettyFramework;
@@ -197,7 +196,7 @@ public class NettyChain extends HttpChain {
         }
     }
 
-    public synchronized void startNettyChannel() {
+    public synchronized void startNettyChannel() { // GDH this is linked from update and the wola one will come from WOLAChainBuilder::update to the equivalent of this
         startCount = startCount + 1;
 
         if (TraceComponent.isAnyTracingEnabled() && tc.isDebugEnabled()) {
