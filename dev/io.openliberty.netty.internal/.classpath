@@ -3,5 +3,211 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="aQute.bnd.classpath.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="/io.openliberty.endpoint"/>
+	<classpathentry kind="lib" path="C:/Users/803221897/.m2/repository/io/netty/netty-transport/4.1.100.Final/netty-transport-4.1.100.Final.jar" sourcepath="C:/Users/803221897/.m2/repository/io/netty/netty-transport/4.1.100.Final/netty-transport-4.1.100.Final-sources.jar">
+		<attributes>
+			<attribute name="bsn" value="io.netty:netty-transport"/>
+			<attribute name="type" value="REPO"/>
+			<attribute name="project" value="io.openliberty.io.netty"/>
+			<attribute name="version" value="4.1.100.Final"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="io/netty/bootstrap/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/embedded/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/group/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/internal/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/local/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/nio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/oio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/pool/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/nio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/oio/*"/>
+			<accessrule ignoreifbetter="true" kind="discouraged" pattern="**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/803221897/.m2/repository/io/netty/netty-common/4.1.100.Final/netty-common-4.1.100.Final.jar" sourcepath="C:/Users/803221897/.m2/repository/io/netty/netty-common/4.1.100.Final/netty-common-4.1.100.Final-sources.jar">
+		<attributes>
+			<attribute name="bsn" value="io.netty:netty-common"/>
+			<attribute name="type" value="REPO"/>
+			<attribute name="project" value="io.openliberty.io.netty"/>
+			<attribute name="version" value="4.1.100.Final"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="io/netty/util/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/collection/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/concurrent/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/logging/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/svm/*"/>
+			<accessrule ignoreifbetter="true" kind="discouraged" pattern="**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/803221897/.m2/repository/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar" sourcepath="C:/Users/803221897/.m2/repository/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar">
+		<attributes>
+			<attribute name="bsn" value="org.osgi:org.osgi.annotation.versioning"/>
+			<attribute name="type" value="REPO"/>
+			<attribute name="project" value="com.ibm.ws.org.osgi.annotation.versioning"/>
+			<attribute name="version" value="1.1.0"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/osgi/annotation/versioning/*"/>
+			<accessrule ignoreifbetter="true" kind="discouraged" pattern="**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/io.openliberty.io.netty/generated/io.openliberty.io.netty.jar">
+		<attributes>
+			<attribute name="bsn" value="io.openliberty.io.netty"/>
+			<attribute name="type" value="PROJECT"/>
+			<attribute name="project" value="io.openliberty.io.netty"/>
+			<attribute name="version" value="latest"/>
+			<attribute name="index_location" value="platform:/plugin/bndtools.builder/org/bndtools/builder/classpath/empty.index"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="io/netty/bootstrap/*"/>
+			<accessrule kind="accessible" pattern="io/netty/buffer/*"/>
+			<accessrule kind="accessible" pattern="io/netty/buffer/search/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/embedded/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/group/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/internal/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/local/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/nio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/oio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/pool/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/nio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/socket/oio/*"/>
+			<accessrule kind="accessible" pattern="io/netty/channel/unix/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/address/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/base64/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/bytes/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/compression/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/cookie/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/cors/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/multipart/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/websocketx/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/websocketx/extensions/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http/websocketx/extensions/compression/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/http2/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/json/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/marshalling/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/protobuf/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/rtsp/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/serialization/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/socks/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/socksx/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/socksx/v4/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/socksx/v5/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/spdy/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/string/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/codec/xml/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/flow/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/flush/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/ipfilter/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/logging/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/pcap/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/proxy/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/stream/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/timeout/*"/>
+			<accessrule kind="accessible" pattern="io/netty/handler/traffic/*"/>
+			<accessrule kind="accessible" pattern="io/netty/resolver/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/collection/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/concurrent/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/logging/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/shaded/org/jctools/queues/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/shaded/org/jctools/queues/atomic/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/shaded/org/jctools/util/*"/>
+			<accessrule kind="accessible" pattern="io/netty/util/internal/svm/*"/>
+			<accessrule ignoreifbetter="true" kind="discouraged" pattern="**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.ws.kernel.feature.core"/>
+	<classpathentry kind="lib" path="/org.eclipse.osgi/generated/org.eclipse.osgi.jar">
+		<attributes>
+			<attribute name="bsn" value="org.eclipse.osgi"/>
+			<attribute name="type" value="PROJECT"/>
+			<attribute name="project" value="org.eclipse.osgi"/>
+			<attribute name="version" value="latest"/>
+			<attribute name="index_location" value="platform:/plugin/bndtools.builder/org/bndtools/builder/classpath/empty.index"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/adaptor/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/internal/adaptor/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/equinox/log/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/container/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/container/builders/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/container/namespaces/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/framework/console/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/framework/eventmgr/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/framework/internal/reliablefile/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/framework/log/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/framework/util/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/debug/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/framework/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/hookregistry/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/loader/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/loader/buddy/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/loader/classpath/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/loader/sources/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/location/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/messages/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/provisional/service/security/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/provisional/verifier/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/service/security/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/serviceregistry/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/signedcontent/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/internal/url/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/launch/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/report/resolution/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/datalocation/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/debug/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/environment/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/localization/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/pluginconversion/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/resolver/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/runnable/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/security/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/service/urlconversion/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/signedcontent/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/storage/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/storage/bundlefile/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/storage/url/reference/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/storagemanager/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/osgi/util/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/dto/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/connect/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/dto/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/hooks/bundle/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/hooks/resolver/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/hooks/service/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/hooks/weaving/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/launch/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/namespace/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/startlevel/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/startlevel/dto/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/wiring/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/framework/wiring/dto/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/resource/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/resource/dto/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/condition/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/condpermadmin/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/log/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/log/admin/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/packageadmin/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/permissionadmin/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/resolver/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/startlevel/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/url/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/util/tracker/*"/>
+			<accessrule ignoreifbetter="true" kind="discouraged" pattern="**"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
