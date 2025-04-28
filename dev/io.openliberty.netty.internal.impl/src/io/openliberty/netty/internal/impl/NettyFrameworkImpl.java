@@ -61,6 +61,7 @@ import io.openliberty.netty.internal.exception.NettyException;
 import io.openliberty.netty.internal.tcp.TCPConfigurationImpl;
 import io.openliberty.netty.internal.tcp.TCPUtils;
 import io.openliberty.netty.internal.udp.UDPUtils;
+import io.openliberty.netty.internal.local.LocalUtils;
 import com.ibm.websphere.channelfw.EndPointMgr;
 
 /**
@@ -482,6 +483,16 @@ public class NettyFrameworkImpl implements ServerQuiesceListener, NettyFramework
         return TCPUtils.start(this, bootstrap, inetHost, inetPort, bindListener);
     }
     
+    @Override
+    public ServerBootstrapExtended createLocalBootstrap(Map<String, Object> options) throws NettyException {
+	return LocalUtils.createLocalBootstrap(this, options);
+    }
+
+    @Override
+    public BootstrapExtended createLocalBootstrapOutbound(Map<String, Object> options) throws NettyException {
+	return LocalUtils.createLocalBootstrapOutbound(this, options);
+    }
+
 
     @Override
     public Channel start(BootstrapExtended bootstrap, String inetHost, int inetPort,
